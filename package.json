@@ -1,0 +1,29 @@
+{
+  "name": "hamster-s3",
+  "version": "0.0.1",
+  "description": "A files proxy between the user and aws s3 containing the files.",
+  "main": "www/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node www/app.js",
+    "dev": "nodemon www/app.js",
+    "dev-f": "DEBUG=hamster-s3:* nodemon www/app.js"
+  },
+  "keywords": [],
+  "author": "Nicolás Rodrigues",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.612.0",
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.2",
+    "uuid": "^3.4.0"
+  },
+  "devDependencies": {
+    "debug": "^4.1.1",
+    "nodemon": "^2.0.2"
+  }
+}
